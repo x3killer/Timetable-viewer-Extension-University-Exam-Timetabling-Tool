@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+  <EditText
+      android:id="@+id/password2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:drawableLeft="@drawable/ic_icons8_password"
+      android:drawablePadding="20dp"
+      android:hint="Re-enter Password"
+      android:inputType="textPassword"
+      android:padding="20dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/gray"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.473"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/password" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="107dp"
+      android:layout_height="97dp"
+      android:layout_marginTop="4dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/ic_img" />
+
+  <TextView
+      android:id="@+id/tv1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="4dp"
+      android:gravity="center"
+      android:text="Sign Up"
+      android:textSize="35dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+  <EditText
+      android:id="@+id/username"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:layout_marginTop="8dp"
+      android:drawableLeft="@drawable/ic_username"
+      android:drawablePadding="20dp"
+      android:hint="Full Name"
+      android:inputType="textPersonName"
+      android:padding="20dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/gray"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.526"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+  <EditText
+      android:id="@+id/email"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:layout_marginTop="4dp"
+      android:drawableLeft="@drawable/ic_baseline_email"
+      android:drawablePadding="20dp"
+      android:hint="Email"
+      android:inputType="textEmailAddress"
+      android:padding="20dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/gray"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.473"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/username" />
+
+  <EditText
+      android:id="@+id/studentID"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:layout_marginTop="4dp"
+      android:drawableLeft="@drawable/ic_id"
+      android:drawablePadding="20dp"
+      android:hint="Student ID"
+      android:inputType=""
+      android:padding="20dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/gray"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.842"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+  <EditText
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:layout_marginTop="4dp"
+      android:drawableLeft="@drawable/ic_icons8_password"
+      android:drawablePadding="20dp"
+      android:hint="Password"
+      android:inputType="textPassword"
+      android:padding="20dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/gray"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.473"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/studentID" />
+
+  <Button
+      android:id="@+id/signupbtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="20dp"
+      android:layout_marginBottom="32dp"
+      android:backgroundTint="@color/design_default_color_primary"
+      android:text="SIGN UP"
+      app:layout_constraintBottom_toTopOf="@+id/tvsignup"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/password2" />
+
+  <TextView
+      android:id="@+id/tvsignup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:text="Already a user? SIGN IN"
+      android:textSize="15dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <EditText
+      android:id="@+id/phone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:layout_marginTop="4dp"
+      android:drawableLeft="@drawable/ic_baseline_phone"
+      android:drawablePadding="20dp"
+      android:hint="Phone Number"
+      android:inputType="textPhonetic"
+      android:padding="20dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/gray"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.473"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
